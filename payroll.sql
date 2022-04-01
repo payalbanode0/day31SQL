@@ -20,12 +20,43 @@ Go
 
 Update employee_payroll
 Set Gender = 'f' 
-Where Name = 'priya' or Name = 'Manu'
+Where Name = 'payal' or Name = 'anu'
 Go
 
 Update employee_payroll
-Set Gender = 'f' 
+Set Gender = 'F' 
 Where Name = 'pooja'
 Go
+
+Select Sum(Salary) 
+From employee_payroll
+Where Gender ='f'
+Group By Gender
+Go
+
+Select Avg(Salary) 
+From employee_payroll
+Where Gender ='f'
+Group By Gender
+Go
+
+Select Min(Salary) 
+From employee_payroll
+Where Gender ='f'
+Group By Gender
+Go
+
+Select Max(Salary) 
+From employee_payroll
+Where Gender ='f'
+Group By Gender
+Go
+
+Select Count(Salary) 
+From employee_payroll
+Where Gender ='f'
+Group By Gender
+Go
+
 Select *
 From employee_payroll
