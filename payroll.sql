@@ -1,7 +1,7 @@
 --uc2 create table
-create database payroll_service
+create database payrollservices
 Go
-use payroll_service
+use payrollservices
 Go
 Create Table employee_payroll
 ( Id int Identity primary Key,
