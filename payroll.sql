@@ -1,15 +1,8 @@
---uc2 create table
-create database payroll_service
+--uc3 insert data into table
+use payrollservices
 Go
-use payroll_service
-Go
-Create Table employee_payroll
-( Id int Identity primary Key,
-  Name varchar(50) Not Null,
-  Salary money default 1000,
-  StartDate datetime default GetDate()
-) 
 
-select *
-from employee_payroll
-Go
+Insert into employee_payroll (Name,Salary,StartDate) values('Manoj',80000,GETDATE())
+Insert into employee_payroll (Name,Salary,StartDate) values('Laxmi',13000,GETDATE())
+Insert into employee_payroll (Name,Salary,StartDate) values('Manoj',5000000,GETDATE())
+
